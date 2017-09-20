@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Андрей Сергеев](https://up.htmlacademy.ru/adaptive/12/user/443953).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Кошара](https://vk.com/alex_koshara).
 
 ---
 

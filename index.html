@@ -2,11 +2,169 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Пинк - приложение</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <header class="page-header">
+      <a class="page-header__logo logo">
+        <img class="logo__image" src="http://placehold.it/150x100" width="75" height="22" alt="Логотип приложения Пинк">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list menu-list"> <!-- Не уверен нужно ли добавлять класс menu-list? Если у меня в навигации один блок. -->
+            <li class="menu-list__item menu-list__item--active">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="#">Html Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <img class="page-header__app" src="http://placehold.it/150x100" width="375" height="314" alt="Изображение телефона в руке">
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Pink - приложение для ваших фотографий</h1>
+      <section class="download">
+        <h2 class="visually-hidden">Скачать приложение Pink</h2>
+        <button class="download__app button">Скачать приложение</button>
+        <div class="download__platform">
+          <img class="download__icon" src="http://placehold.it/150x100" width="47" height="56" alt="Apple">
+          <img class="download__icon" src="http://placehold.it/150x100" width="43" height="47" alt="Android">
+          <img class="download__icon" src="http://placehold.it/150x100" width="44" height="41" alt="Windows">
+        </div>
+        <p class="download__annotation">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества приложения Pink</h2>
+        <p class="advantages__title">Устали от серости мегаполиса?</p>
+        <p class="advantages__title">Нам есть, что вам предложить!</p>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages-title">Поднимает настроение</h3>
+            <p class="advantages-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages-title">Меняет мир вокруг</h3>
+            <p class="advantages-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages-title">Заводит новых друзей</h3>
+            <p class="advantages-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+          <li class="advantages__item">
+            <img src="http://placehold.it/150x100" width="157" height="320" alt="Всем привет!">
+          </li>
+        </ul>
+      </section>
+      <section class="reviews slider">
+        <h2 class="visually-hidden">Отзывы о нас</h2>
+        <div class="reviews__list slider__list">
+          <blockquote class="reviews__item slider__item">
+            <cite class="reviews__autor">Николай Петров</cite>
+            <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <cite class="reviews__autor">Николай Петров</cite>
+            <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <cite class="reviews__autor">Николай Петров</cite>
+            <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+          </blockquote>
+        </div>
+        <p class="reviews__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </section>
+      <section class="rates slider">
+        <div class="rates__list slider__list">
+          <h2 class="visually-hidden">Наши тарифы</h2>
+          <table class="rates__item slider__item">
+            <tr><td class="rates__name rates__name--hit" colspan="2">Стандарт <span>3.99 usd</span></td></tr>
+            <tr>
+              <td class="rates__option">Розовый фильтр</td>
+              <td class="rates__available">есть</td>
+            </tr>
+            <tr>
+              <td class="rates__option">Смайлики</td>
+              <td class="rates__available">есть</td>
+            </tr>
+            <tr>
+              <td class="rates__option">Коментарии</td>
+              <td class="rates__available">нет</td>
+            </tr>
+          </table>
+          <table class="rates__item slider__item">
+            <tr><td class="rates__name" colspan="2">Стандарт <span>3.99 usd</span></td></tr>
+            <tr>
+              <td class="rates__option">Розовый фильтр</td>
+              <td class="rates__available">есть</td>
+            </tr>
+            <tr>
+              <td class="rates__option">Смайлики</td>
+              <td class="rates__available">есть</td>
+            </tr>
+            <tr>
+              <td class="rates__option">Коментарии</td>
+              <td class="rates__available">нет</td>
+            </tr>
+          </table>
+          <table class="rates__item slider__item">
+            <tr><td class="rates__name" colspan="2">Стандарт <span>3.99 usd</span></td></tr>
+            <tr>
+              <td class="rates__option">Розовый фильтр</td>
+              <td class="rates__available">есть</td>
+            </tr>
+            <tr>
+              <td class="rates__option">Смайлики</td>
+              <td class="rates__available">есть</td>
+            </tr>
+            <tr>
+              <td class="rates__option">Коментарии</td>
+              <td class="rates__available">нет</td>
+            </tr>
+          </table>
+        </div>
+        <p class="rates__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </section>
+      <footer class="page-footer">
+        <div class="page-footer__contacts contacts">
+          <h2 class="visually-hidden">Как нас найти?</h2>
+          <p class="contacts__title">Остались вопросы?</p>
+          <p class="contacts__title">Свяжитесь с нами!</p>
+          <div class="contacts__item">
+            <p class="contacts__action">Звоните:</p>
+            <a class="contacts-text" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </div>
+          <div class="contacts__item">
+            <p class="contacts__action">Пишите:</p>
+            <a class="contacts-text" href="e-mail:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+          <div class="contacts__item">
+            <p class="contacts__action">Приезжайте в гости:</p>
+            <p class="contacts-text">ул. Большая Конюшенная, 19/8</p>
+          </div>
+        </div>
+        <div class="page-footer__map">
+          <img class="page-footer__map-image" src="http://placehold.it/150x100" width="320" height="200" alt="Адрес: ул. Большая Конюшенная 19/8">
+        </div>
+      </footer>
+    </main>
 
   </body>
 </html>

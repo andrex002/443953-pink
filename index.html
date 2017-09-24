@@ -35,13 +35,13 @@
         <a class="download__app button" href="#">Скачать приложение</a>
         <div class="download__platform platform">
           <a class="platform__link" href="#">Скачать приложение для устройств Mac Os
-            <img class="platform__apple" src="http://placehold.it/150x100" width="47" height="56" alt="Apple">
+            <img class="platform__image" src="http://placehold.it/150x100" width="47" height="56" alt="Логотип Apple">
           </a>
           <a class="platform__link" href="#">Скачать приложение для устройств Android
-            <img class="platform__android" src="http://placehold.it/150x100" width="43" height="47" alt="Android">
+            <img class="platform__image" src="http://placehold.it/150x100" width="43" height="47" alt="Логотип Android">
           </a>
           <a class="platform__link" href="#">Скачать приложение для устройств Windows
-            <img class="platform__windows" src="http://placehold.it/150x100" width="44" height="41" alt="Windows">
+            <img class="platform__image" src="http://placehold.it/150x100" width="44" height="41" alt="Логотип Windows">
           </a>
         </div>
         <p class="download__annotation">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -67,25 +67,25 @@
       </section>
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы о нас</h2>
-        <div class="reviews__slide">
+        <div class="reviews__block">
           <p class="reviews__autor">Николай Петров</p>
           <blockquote class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
           </blockquote>
         </div>
-        <div class="reviews__slide">
+        <div class="reviews__block">
           <p class="reviews__autor">Николай Петров</p>
           <blockquote class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
           </blockquote>
         </div>
-        <div class="reviews__slide">
+        <div class="reviews__block">
           <p class="reviews__autor">Николай Петров</p>
           <blockquote class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
           </blockquote>
         </div>
-        <p class="reviews__toggles">
-          <button class="reviews__toggle reviews__toggle--active" type="button">1</button>
-          <button class="reviews__toggle" type="button">2</button>
-          <button class="reviews__toggle" type="button">3</button>
+        <p class="reviews__toggles toggles">
+          <button class="toggles__button toggles__button--active" type="button">1</button>
+          <button class="toggles__button" type="button">2</button>
+          <button class="toggles__button" type="button">3</button>
         </p>
       </section>
       <section class="rates">
@@ -95,15 +95,21 @@
             <tr><td class="rates__name rates__name--hit" colspan="2">Стандарт <span>3.99 usd</span></td></tr>
             <tr>
               <td class="rates__option">Розовый фильтр</td>
-              <td class="rates__available">есть</td>
+              <td class="rates__available">есть
+                <img src="http://placehold.it/150x100" width="31" height="21" alt="Галочка">
+              </td>
             </tr>
             <tr>
               <td class="rates__option">Смайлики</td>
-              <td class="rates__available">есть</td>
+              <td class="rates__available">есть
+                <img src="http://placehold.it/150x100" width="31" height="21" alt="Галочка">
+              </td>
             </tr>
             <tr>
               <td class="rates__option">Коментарии</td>
-              <td class="rates__available">нет</td>
+              <td class="rates__available">нет
+                <img src="http://placehold.it/150x100" width="27" height="26" alt="Крестик">
+              </td>
             </tr>
           </table>
           <table class="rates__item">
@@ -137,27 +143,27 @@
             </tr>
           </table>
         </div>
-        <p class="rates__toggles">
-          <button class="rates__toggle" type="button">1</button>
-          <button class="rates__toggle rates__toggle--active" type="button">2</button>
-          <button class="rates__toggle" type="button">3</button>
+        <p class="rates__toggles toogles">
+          <button class="toggles__button" type="button">1</button>
+          <button class="toggles__button toggles__button--active" type="button">2</button>
+          <button class="toggles__button" type="button">3</button>
         </p>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__contacts contacts">
-        <h2 class="visually-hidden">Контакты?</h2>
+        <h2 class="visually-hidden">Контакты</h2>
         <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
         <div class="contacts__item">
           <p class="contacts__action">
             <span>Звоните:</span>
-            <a class="contacts-link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </p>
         </div>
         <div class="contacts__item">
           <p class="contacts__action">
             <span>Пишите:</span>
-            <a class="contacts-link" href="e-mail:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <a class="contacts__link" href="e-mail:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
         </div>
         <div class="contacts__item">

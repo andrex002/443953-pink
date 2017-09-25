@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Конкурс от Pink</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo logo">
+        <img class="logo__image" src="http://placehold.it/150x100" width="75" height="22" alt="Логотип приложения Пинк">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list menu-list">
+            <li class="menu-list__item menu-list__item--active">
+              <a class="menu-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="https://htmlacademy.ru">Html Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <h1 class="page-header__page-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </header>
+    <main class="page-main">
+      <section class="form">
+        <p class="form__title">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        </p>
+        <form class="form__wrapper" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="form__group">
+            <label class="form__label">Фамилия
+              <input class="form__field" type="text" name="Фамилия" placeholder="Укажите фамилию *" required="required">
+            </label>
+            <label class="form__label">Имя
+              <input class="form__field" type="text" name="Имя" placeholder="Укажите ваше имя *" required="required">
+            </label>
+            <label class="form__label">Отчество
+              <input class="form__field" type="text" name="Отчество" placeholder="Ну и отчество тоже">
+            </label>
+          </fieldset>
+          <fieldset class="form__group">
+            <legend class="form__group-title">Ваши безбашенные достижения в путешествии</legend>
+            <label class="form__indicator">
+              <input class="form__checkbox-input" type="checkbox" name="checkbox1" checked="checked">
+              Сделал селфи с акулой
+            </label>
+            <label class="form__indicator">
+              <input class="form__checkbox-input" type="checkbox" name="checkbox2" checked="checked">
+              Обгорел на пляже
+            </label>
+            <label class="form__indicator">
+              <input class="form__checkbox-input" type="checkbox" name="checkbox3">
+              Видел Чака Норриса
+            </label>
+            <label class="form__indicator">
+              <input class="form__checkbox-input" type="checkbox" name="checkbox4">
+              Накупил сувениров
+            </label>
+            <label class="form__indicator">
+              <input class="form__checkbox-input" type="checkbox" name="checkbox5" checked="checked">
+              Удержал башню
+            </label>
+            <label class="form__indicator">
+              <input class="form__checkbox-input" type="checkbox" name="checkbox6">
+              Разгромил отель
+            </label>
+          </fieldset>
+          <fieldset class="form__group">
+            <label class="form__label">Номер телефона
+              <input class="form__field" type="tel" name="Телефон" placeholder="Номер, пожалуйста">
+            </label>
+            <label class="form__label">Адрес почты
+              <input class="form__field" type="email" name="Почта" placeholder="Введите почту *">
+            </label>
+          </fieldset>
+          <fieldset class="form__group">
+            <legend class="form__group-title">С каким приложением путешествовали?</legend>
+            <label class="form__indicator">
+              <input class="form__radio-input" type="radio" name="pink-platform" value="iOS" checked="checked">
+              Pink для iOS
+            </label>
+            <label class="form__indicator">
+              <input class="form__radio-input" type="radio" name="pink-platform" value="Android">
+              Pink на Android
+            </label>
+            <label class="form__indicator">
+              <input class="form__radio-input" type="radio" name="pink-platform" value="Windows Phone">
+              Windows Phone
+            </label>
+          </fieldset>
+          <fieldset class="form__group">
+            <legend class="form__group-title">Опишите свои эмоции</legend>
+            <textarea class="form__message" name="user-message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <button class="form__button" type="submit">Отправить форму</button>
+          <p class="form__anotation"><span>*</span> - обязательные поля</p>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__logo logo-full">
+        <img class="logo-full__image" src="http://placehold.it/150x100" width="147" height="40" alt="Логотип Pink">
+      </div>
+      <div class="page-footer__social social">
+        <a class="social__link" href="#">twitter
+          <svg></svg>
+        </a>
+        <a class="social__link" href="#">facebook
+          <svg></svg>
+        </a>
+        <a class="social__link" href="#">youtube
+          <svg></svg>
+        </a>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано
+          <a class="copyright__link" href="#">
+            <img src="http://placehold.it/150x100" width="27" height="34" alt="Логотип htmlacademy">
+          </a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

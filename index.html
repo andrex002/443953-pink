@@ -2,11 +2,137 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Пинк - приложение</title>
   </head>
   <body>
+    <header class="page-header">
+      <a class="page-header__logo logo">
+        <img class="logo__image" src="http://placehold.it/75x22" width="75" height="22" alt="Логотип приложения Пинк">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list menu-list">
+            <li class="menu-list__item menu-list__item--active">
+              <a class="menu-list__link">Главная</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="https://htmlacademy.ru">Html Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1 class="visually-hidden">Pink - приложение для ваших фотографий</h1>
+      <section class="download">
+        <a class="download__app button" href="#">Скачать приложение</a>
+        <div class="download__platform platform">
+          <a class="platform__link" href="#">Скачать приложение для устройств Mac Os
+            <img class="platform__image" src="http://placehold.it/47x56" width="47" height="56" alt="Логотип Apple">
+          </a>
+          <a class="platform__link" href="#">Скачать приложение для устройств Android
+            <img class="platform__image" src="http://placehold.it/43x47" width="43" height="47" alt="Логотип Android">
+          </a>
+          <a class="platform__link" href="#">Скачать приложение для устройств Windows
+            <img class="platform__image" src="http://placehold.it/44x41" width="44" height="41" alt="Логотип Windows">
+          </a>
+        </div>
+        <p class="download__annotation">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества приложения Pink</h2>
+        <p class="advantages__text">Устали от серости мегаполиса?</p>
+        <p class="advantages__text">Нам есть, что вам предложить!</p>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__title">Поднимает настроение</h3>
+            <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Меняет мир вокруг</h3>
+            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Заводит новых друзей</h3>
+            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+      </section>
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы о нас</h2>
+        <div class="reviews__block">
+          <p class="reviews__autor">Николай Петров</p>
+          <blockquote class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
+          </blockquote>
+        </div>
+        <p class="reviews__toggles toggles">
+          <button class="toggles__button toggles__button--active" type="button">1</button>
+          <button class="toggles__button" type="button">2</button>
+          <button class="toggles__button" type="button">3</button>
+        </p>
+      </section>
+      <section class="rates">
+        <div class="rates__list">
+          <h2 class="visually-hidden">Наши тарифы</h2>
+          <table class="rates__item">
+            <tr>
+              <td class="rates__name rates__name--hit" colspan="2">Стандарт <span>3.99 usd</span></td>
+            </tr>
+            <tr>
+              <td class="rates__option">Розовый фильтр</td>
+              <td class="rates__available">есть
+                <img src="http://placehold.it/31x21" width="31" height="21" alt="Галочка">
+              </td>
+            </tr>
+            <tr>
+              <td class="rates__option">Смайлики</td>
+              <td class="rates__available">есть
+                <img src="http://placehold.it/31x21" width="31" height="21" alt="Галочка">
+              </td>
+            </tr>
+            <tr>
+              <td class="rates__option">Коментарии</td>
+              <td class="rates__available">нет
+                <img src="http://placehold.it/27x26" width="27" height="26" alt="Крестик">
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="rates__toggles toogles">
+          <button class="toggles__button" type="button">1</button>
+          <button class="toggles__button toggles__button--active" type="button">2</button>
+          <button class="toggles__button" type="button">3</button>
+        </p>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__contacts contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+        <div class="contacts__item">
+          <p class="contacts__action">Звоните:</p>
+          <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+        </div>
+        <div class="contacts__item">
+          <p class="contacts__action">Пишите:</p>
+          <a class="contacts__link" href="e-mail:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div class="contacts__item">
+          <p class="contacts__action">Приезжайте в гости:</p>
+          <a class="contacts__link">ул. Большая Конюшенная, 19/8</a>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+        </div>
+      </div>
+      <div class="map">
+        <img class="map__image" src="http://placehold.it/320x200" width="320" height="200" alt="Адрес: ул. Большая Конюшенная 19/8">
+      </div>
+    </footer>
   </body>
 </html>

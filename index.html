@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Пинк - приложение</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo logo">
         <img class="logo__image" src="http://placehold.it/75x22" width="75" height="22" alt="Логотип приложения Пинк">
       </a>
-      <nav class="main-nav">
+      <nav class="page-header__main-nav main-nav">
         <button class="main-nav__toggle" type="button"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list menu-list">
@@ -28,28 +30,33 @@
           </ul>
         </div>
       </nav>
+      <section class="page-header__download">
+        <div class="download">
+          <a class="download__app button" href="#">Скачать приложение</a>
+          <div class="download__platform platform">
+            <a class="platform__link" href="#">Скачать приложение для устройств Mac Os
+              <img class="platform__image" src="http://placehold.it/47x56" width="47" height="56" alt="Логотип Apple">
+            </a>
+            <a class="platform__link" href="#">Скачать приложение для устройств Android
+              <img class="platform__image" src="http://placehold.it/43x47" width="43" height="47" alt="Логотип Android">
+            </a>
+            <a class="platform__link" href="#">Скачать приложение для устройств Windows
+              <img class="platform__image" src="http://placehold.it/44x41" width="44" height="41" alt="Логотип Windows">
+            </a>
+          </div>
+          <p class="download__annotation">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
     </header>
     <main>
       <h1 class="visually-hidden">Pink - приложение для ваших фотографий</h1>
-      <section class="download">
-        <a class="download__app button" href="#">Скачать приложение</a>
-        <div class="download__platform platform">
-          <a class="platform__link" href="#">Скачать приложение для устройств Mac Os
-            <img class="platform__image" src="http://placehold.it/47x56" width="47" height="56" alt="Логотип Apple">
-          </a>
-          <a class="platform__link" href="#">Скачать приложение для устройств Android
-            <img class="platform__image" src="http://placehold.it/43x47" width="43" height="47" alt="Логотип Android">
-          </a>
-          <a class="platform__link" href="#">Скачать приложение для устройств Windows
-            <img class="platform__image" src="http://placehold.it/44x41" width="44" height="41" alt="Логотип Windows">
-          </a>
-        </div>
-        <p class="download__annotation">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </section>
+
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества приложения Pink</h2>
-        <p class="advantages__text">Устали от серости мегаполиса?</p>
-        <p class="advantages__text">Нам есть, что вам предложить!</p>
+        <p class="advantages__text">
+          <span>Устали от серости мегаполиса?</span>
+          <span>Нам есть, что вам предложить!</span>
+        </p>
         <ul class="advantages__list">
           <li class="advantages__item">
             <h3 class="advantages__title">Поднимает настроение</h3>
@@ -115,7 +122,7 @@
     <footer class="page-footer">
       <div class="page-footer__contacts contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+        <p class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</p>
         <div class="contacts__item">
           <p class="contacts__action">Звоните:</p>
           <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
@@ -126,7 +133,7 @@
         </div>
         <div class="contacts__item">
           <p class="contacts__action">Приезжайте в гости:</p>
-          <a class="contacts__link">ул. Большая Конюшенная, 19/8</a>
+          <a class="contacts__link">ул. Большая<br>Конюшенная, 19/8</a>
 
         </div>
       </div>

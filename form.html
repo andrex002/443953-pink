@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Конкурс от Pink</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -28,12 +30,12 @@
           </ul>
         </div>
       </nav>
-      <h1 class="page-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
     <main>
       <section class="contest">
         <p class="contest__title">
-          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните
         </p>
         <form class="contest__form form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__group">
@@ -110,8 +112,10 @@
             <legend class="form__group-title">Опишите свои эмоции</legend>
             <textarea class="form__message message-field" name="user-message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
-          <button class="button form__button" type="submit">Отправить форму</button>
-          <p class="form__anotation"><span>*</span> - обязательные поля</p>
+          <div class="form__footer">
+            <button class="button form__button" type="submit">Отправить форму</button>
+            <p class="form__anotation"><span class="form__anotation--span">*</span> - обязательные поля</p>
+          </div>
         </form>
       </section>
     </main>

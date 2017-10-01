@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Фотографии пользователей</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo logo" href="index.html">
         <img class="logo__image" src="http://placehold.it/75x22" width="75" height="22" alt="Логотип приложения Пинк">
       </a>
-      <nav class="main-nav">
+      <nav class="page-header__main-nav main-nav">
         <button class="main-nav__toggle" type="button"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list menu-list">
@@ -28,7 +30,7 @@
           </ul>
         </div>
       </nav>
-      <h1 class="page-title">Фотографии пользователей</h1>
+      <h1 class="page-header__title">Фотографии пользователей</h1>
     </header>
     <main>
       <section class="user-galery">
@@ -36,13 +38,13 @@
           Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
         </p>
         <div class="user-post user-post--panorama">
-          <div class="user-post__image-block user-post--title">
+          <div class="user-post--title">
             <img class="user-post__image" src="http://placehold.it/320x137" width="320" height="137" alt="Панорамное изображение">
           </div>
           <div class="user-post__message">
             <p class="user-post__user-name">
               Анна
-              <span>(5 минут назад)</span>
+              <span class="user-post__time">(5 минут назад)</span>
             </p>
             <p class="user-post__text">
               Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
@@ -60,7 +62,7 @@
           <div class="user-post__message">
             <p class="user-post__user-name">
               Левон
-              <span>(5 часов назад)</span>
+              <span class="user-post__time">(5 часов назад)</span>
             </p>
             <p class="user-post__text">
               Вчера он на луну летал, сегодня в руки к нам попал.
@@ -78,7 +80,7 @@
           <div class="user-post__message">
             <p class="user-post__user-name">
               Антон
-              <span>(12 часов назад)</span>
+              <span class="user-post__time">(12 часов назад)</span>
             </p>
             <p class="user-post__text">
               Соседи будут рады!
@@ -96,7 +98,7 @@
           <div class="user-post__message">
             <p class="user-post__user-name">
               Борис
-              <span>(20 часов назад)</span>
+              <span class="user-post__time">(20 часов назад)</span>
             </p>
             <p class="user-post__text">
               Здесь могла быть ваша цитата о высоком и вечном.
@@ -114,7 +116,7 @@
           <div class="user-post__message">
             <p class="user-post__user-name">
               Сергей
-              <span>(25 часов назад)</span>
+              <span class="user-post__time">(25 часов назад)</span>
             </p>
             <p class="user-post__text">
               Самая кубанская в мире!
@@ -132,7 +134,7 @@
           <div class="user-post__message">
             <p class="user-post__user-name">
               Максим
-              <span>(40 часов назад)</span>
+              <span class="user-post__time">(40 часов назад)</span>
             </p>
             <p class="user-post__text">
               Где снег-то?
@@ -150,7 +152,7 @@
           <div class="user-post__message">
             <p class="user-post__user-name">
               Надежда
-              <span>(45 часов назад)</span>
+              <span class="user-post__time">(45 часов назад)</span>
             </p>
             <p class="user-post__text">
               Всем GM и взаимные лайки!
@@ -164,7 +166,7 @@
       </section>
       <section class="new-post">
         <p class="new-post__title">
-          Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+          Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!
         </p>
         <form class="download-photo" action="https://echo.htmlacademy.ru" metod="get">
           <div class="download-photo__image">
@@ -183,8 +185,8 @@
               </div>
             </div>
             <div class="download-photo__buttons">
-              <button class="button button--download-photo" type="submit">Запостить</button>
-              <button class="button button--reset" type="reset">Отмена</button>
+              <button class="button button__download-photo" type="submit">Запостить</button>
+              <button class="button button__reset" type="reset">Отмена</button>
             </div>
           </div>
         </form>

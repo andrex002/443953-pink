@@ -1,0 +1,37 @@
+.button {
+  font-size: 18px;
+  color: @white;
+  font-weight: 700;
+  background-color: transparent;
+  &:hover {
+    color: @hover-color;
+    background-color: @white;
+  }
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+}
+
+.button__download-photo {
+  color: @hover-color;
+  background-color: transparent;
+  &:hover {
+    color: @white;
+    background-color: @hover-color;
+  }
+  &:active {
+    color: @white-transp;
+  }
+}
+.button__reset {
+  color: @cancel-btn;
+  background-color: transparent;
+  &:hover {
+    color: @cancel-hover;
+    background-color: transparent;
+  }
+  &:active {
+    color: @white-transp;
+    background-color: @cancel-hover;
+  }
+}

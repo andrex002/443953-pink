@@ -1,0 +1,35 @@
+.form__group {
+  &:nth-child(2n) {
+    background-color: @bg-color;
+  }
+}
+
+.form__group-title {
+  .title-input;
+}
+
+.form__button {
+  line-height: 30px;
+  background-color: #2aab6d;
+  text-transform: uppercase;
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+    color: @white;
+  }
+  &:active {
+    color: @white-transp;
+  }
+}
+
+.form__anotation {
+  text-transform: uppercase;
+  line-height: 30px;
+  &--span {
+    color: @hover-color;
+  }
+}
+
+.form__footer {
+  text-align: center;
+}

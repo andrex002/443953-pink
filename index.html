@@ -7,7 +7,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--main">
       <a class="page-header__logo logo">
         <img class="logo__image" src="http://placehold.it/75x22" width="75" height="22" alt="Логотип приложения Пинк">
       </a>
@@ -54,8 +54,8 @@
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества приложения Pink</h2>
         <p class="advantages__text">
-          <span>Устали от серости мегаполиса?</span>
-          <span>Нам есть, что вам предложить!</span>
+          <span class="advantages__action">Устали от серости мегаполиса?</span>
+          <span class="advantages__action">Нам есть, что вам предложить!</span>
         </p>
         <ul class="advantages__list">
           <li class="advantages__item">
@@ -90,21 +90,21 @@
           <h2 class="visually-hidden">Наши тарифы</h2>
           <table class="rates__item">
             <tr>
-              <td class="rates__name rates__name--hit" colspan="2">Стандарт <span>3.99 usd</span></td>
+              <td class="rates__name rates__name--hit" colspan="2">Стандарт <span class="rates__price">3.99 usd</span></td>
             </tr>
-            <tr>
+            <tr class="rates__string-option">
               <td class="rates__option">Розовый фильтр</td>
               <td class="rates__available">есть
                 <img src="http://placehold.it/31x21" width="31" height="21" alt="Галочка">
               </td>
             </tr>
-            <tr>
+            <tr class="rates__string-option">
               <td class="rates__option">Смайлики</td>
               <td class="rates__available">есть
                 <img src="http://placehold.it/31x21" width="31" height="21" alt="Галочка">
               </td>
             </tr>
-            <tr>
+            <tr class="rates__string-option">
               <td class="rates__option">Коментарии</td>
               <td class="rates__available">нет
                 <img src="http://placehold.it/27x26" width="27" height="26" alt="Крестик">
@@ -118,28 +118,31 @@
           <button class="toggles__button" type="button">3</button>
         </p>
       </section>
+      <section class="contacts">
+        <div class="contacts__data">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</p>
+          <div class="contacts__item">
+            <p class="contacts__action">Звоните:</p>
+            <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </div>
+          <div class="contacts__item">
+            <p class="contacts__action">Пишите:</p>
+            <a class="contacts__link contacts__email" href="e-mail:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+          <div class="contacts__item">
+            <p class="contacts__action">Приезжайте в гости:</p>
+            <a class="contacts__link">ул. Большая<br>Конюшенная, 19/8</a>
+          </div>
+        </div>
+        <div class="contacts__map">
+          <img class="contacts__map-image" src="http://placehold.it/320x200" width="320" height="200" alt="Адрес: ул. Большая Конюшенная 19/8">
+        </div>
+      </section>
     </main>
-    <footer class="page-footer">
-      <div class="page-footer__contacts contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</p>
-        <div class="contacts__item">
-          <p class="contacts__action">Звоните:</p>
-          <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
-        </div>
-        <div class="contacts__item">
-          <p class="contacts__action">Пишите:</p>
-          <a class="contacts__link" href="e-mail:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </div>
-        <div class="contacts__item">
-          <p class="contacts__action">Приезжайте в гости:</p>
-          <a class="contacts__link">ул. Большая<br>Конюшенная, 19/8</a>
 
-        </div>
-      </div>
-      <div class="map">
-        <img class="map__image" src="http://placehold.it/320x200" width="320" height="200" alt="Адрес: ул. Большая Конюшенная 19/8">
-      </div>
+
+    <footer class="page-footer">
     </footer>
   </body>
 </html>

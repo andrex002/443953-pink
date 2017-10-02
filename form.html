@@ -35,7 +35,8 @@
     <main>
       <section class="contest">
         <p class="contest__title">
-          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          <span class="contest__title--optional">Пожалуйста, заполните форму ниже:</span>
         </p>
         <form class="contest__form form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__group">
@@ -49,7 +50,7 @@
               <input class="input__field" type="text" name="Отчество" placeholder="Ну и отчество тоже">
             </label>
           </fieldset>
-          <fieldset class="form__group">
+          <fieldset class="form__group form__group--gray-bg">
             <legend class="form__group-title">Ваши безбашенные достижения в путешествии</legend>
             <label class="form__indicator checkbox">
               <input class="checkbox__field" type="checkbox" name="achievements" value="selfie-shark" checked="checked">
@@ -83,14 +84,14 @@
             </label>
           </fieldset>
           <fieldset class="form__group">
-            <label class="form__label label-text">Номер телефона
-              <input class="label-text__field" type="tel" name="Телефон" placeholder="Номер, пожалуйста">
+            <label class="form__label input">Номер телефона
+              <input class="input__field" type="tel" name="Телефон" placeholder="Номер, пожалуйста">
             </label>
-            <label class="form__label label-text">Адрес почты
-              <input class="label-text__field" type="email" name="Почта" placeholder="Введите почту *">
+            <label class="form__label input">Адрес почты
+              <input class="input__field" type="email" name="Почта" placeholder="Введите почту *">
             </label>
           </fieldset>
-          <fieldset class="form__group">
+          <fieldset class="form__group form__group--gray-bg">
             <legend class="form__group-title">С каким приложением путешествовали?</legend>
             <label class="form__indicator radio">
               <input class="radio__field" type="radio" name="pink-platform" value="iOS" checked="checked">

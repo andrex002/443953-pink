@@ -1,6 +1,7 @@
 .form__group {
-  &:nth-child(2n) {
-    background-color: @bg-color;
+
+  &--gray-bg {
+    background-color: @bg-grey;
   }
 }
 
@@ -12,19 +13,21 @@
   line-height: 30px;
   background-color: #2aab6d;
   text-transform: uppercase;
-  &:hover,
-  &:focus {
+
+  &:hover {
     background-color: #1c9b5e;
     color: @white;
   }
+
   &:active {
-    color: @white-transp;
+    color: @white--30;
   }
 }
 
 .form__anotation {
   text-transform: uppercase;
   line-height: 30px;
+
   &--span {
     color: @hover-color;
   }

@@ -6,12 +6,13 @@
   background-position: center bottom;
   padding-bottom: 80px;
   position: relative;
+
   &--main {
-    padding-bottom: 395px;
-    margin-bottom: 335px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
     background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-position: 0 bottom, bottom;
+    background-position: 0 top, top;
     position: relative;
   }
 }
@@ -21,13 +22,13 @@
   line-height: 30px;
   color: @white;
   font-weight: 300;
-  .center-container;
   text-align: center;
+  .center-container;
 }
 
 .page-header__download {
-  position: absolute;
-  bottom:-339px;
+
+  margin-top: 339px;
   width: 100%;
   background-color: @base-color;
 }

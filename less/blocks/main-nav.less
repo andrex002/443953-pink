@@ -1,6 +1,8 @@
 .main-nav {
+  padding-top: 69px;
   font-size: 18px;
   color: @white;
+  position: relative;
 }
 
 .main-nav__wrapper {
@@ -9,4 +11,23 @@
 
 .main-nav__list {
   .ul-reset;
+}
+
+.main-nav__toggle {
+  position: absolute;
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 5px;
+    background-color: @white;
+    transform: rotate(45deg);
+  }
+  &::after {
+    content: "";
+    width: 30px;
+    height: 5px;
+    background-color: @white;
+    transform: rotate(-45deg);
+  }
 }

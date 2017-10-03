@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Конкурс от Pink</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -34,6 +36,7 @@
       <section class="contest">
         <p class="contest__title">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          <span class="contest__title contest__title--optional">Пожалуйста, заполните форму ниже:</span>
         </p>
         <form class="contest__form form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__group">
@@ -47,71 +50,73 @@
               <input class="input__field" type="text" name="Отчество" placeholder="Ну и отчество тоже">
             </label>
           </fieldset>
-          <fieldset class="form__group">
+          <fieldset class="form__group form__group--gray-bg">
             <legend class="form__group-title">Ваши безбашенные достижения в путешествии</legend>
             <label class="form__indicator checkbox">
-              <input class="checkbox__checkbox-input" type="checkbox" name="achievements" value="selfie-shark" checked="checked">
+              <input class="checkbox__field" type="checkbox" name="achievements" value="selfie-shark" checked="checked">
               <span class="checkbox__icon"></span>
               Сделал селфи с акулой
             </label>
             <label class="form__indicator checkbox">
-              <input class="checkbox__checkbox-input" type="checkbox" name="achievements" value="beach" checked="checked">
+              <input class="checkbox__field" type="checkbox" name="achievements" value="beach" checked="checked">
               <span class="checkbox__icon"></span>
               Обгорел на пляже
             </label>
             <label class="form__indicator checkbox">
-              <input class="checkbox__checkbox-input" type="checkbox" name="achievements" value="Chuck-Norris">
+              <input class="checkbox__field" type="checkbox" name="achievements" value="Chuck-Norris">
               <span class="checkbox__icon"></span>
               Видел Чака Норриса
             </label>
             <label class="form__indicator checkbox">
-              <input class="checkbox__checkbox-input" type="checkbox" name="achievements" value="souvenirs">
+              <input class="checkbox__field" type="checkbox" name="achievements" value="souvenirs">
               <span class="checkbox__icon"></span>
               Накупил сувениров
             </label>
             <label class="form__indicator checkbox">
-              <input class="checkbox__checkbox-input" type="checkbox" name="achievements" value="tower" checked="checked">
+              <input class="checkbox__field" type="checkbox" name="achievements" value="tower" checked="checked">
               <span class="checkbox__icon"></span>
               Удержал башню
             </label>
             <label class="form__indicator checkbox">
-              <input class="checkbox__checkbox-input" type="checkbox" name="achievements" value="hotel">
+              <input class="checkbox__field" type="checkbox" name="achievements" value="hotel">
               <span class="checkbox__icon"></span>
               Разгромил отель
             </label>
           </fieldset>
           <fieldset class="form__group">
-            <label class="form__label label-text">Номер телефона
-              <input class="label-text__field" type="tel" name="Телефон" placeholder="Номер, пожалуйста">
+            <label class="form__label input">Номер телефона
+              <input class="input__field" type="tel" name="Телефон" placeholder="Номер, пожалуйста">
             </label>
-            <label class="form__label label-text">Адрес почты
-              <input class="label-text__field" type="email" name="Почта" placeholder="Введите почту *">
+            <label class="form__label input">Адрес почты
+              <input class="input__field" type="email" name="Почта" placeholder="Введите почту *">
             </label>
           </fieldset>
-          <fieldset class="form__group">
+          <fieldset class="form__group form__group--gray-bg">
             <legend class="form__group-title">С каким приложением путешествовали?</legend>
             <label class="form__indicator radio">
-              <input class="radio__radio-input" type="radio" name="pink-platform" value="iOS" checked="checked">
+              <input class="radio__field" type="radio" name="pink-platform" value="iOS" checked="checked">
               <span class="radio__icon"></span>
               Pink для iOS
             </label>
             <label class="form__indicator radio">
-              <input class="radio__radio-input" type="radio" name="pink-platform" value="Android">
+              <input class="radio__field" type="radio" name="pink-platform" value="Android">
               <span class="radio__icon"></span>
               Pink на Android
             </label>
             <label class="form__indicator radio">
-              <input class="radio__radio-input" type="radio" name="pink-platform" value="Windows-Phone">
+              <input class="radio__field" type="radio" name="pink-platform" value="Windows-Phone">
               <span class="radio__icon"></span>
               Windows Phone
             </label>
           </fieldset>
           <fieldset class="form__group">
             <legend class="form__group-title">Опишите свои эмоции</legend>
-            <textarea class="form__message" name="user-message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <textarea class="form__message message-field" name="user-message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
-          <button class="button form__button" type="submit">Отправить форму</button>
-          <p class="form__anotation"><span>*</span> - обязательные поля</p>
+          <div class="form__footer">
+            <button class="button form__button" type="submit">Отправить форму</button>
+            <p class="form__anotation"><span class="form__anotation form__anotation--span">*</span> - обязательные поля</p>
+          </div>
         </form>
       </section>
     </main>

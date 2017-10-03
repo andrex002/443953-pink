@@ -1,0 +1,44 @@
+.button {
+  font-size: 18px;
+  color: @white;
+  font-weight: 700;
+  background-color: transparent;
+
+  &:hover {
+    color: @hover-color;
+    background-color: @white;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+
+  &--download-photo {
+    color: @hover-color;
+    background-color: transparent;
+
+    &:hover {
+      color: @white;
+      background-color: @hover-color;
+    }
+
+    &:active {
+      color: @white--30;
+    }
+  }
+
+  &--reset {
+    color: @base-color--10;
+    background-color: transparent;
+
+    &:hover {
+      color: @base-color--30;
+      background-color: transparent;
+    }
+
+    &:active {
+      color: @white--30;
+      background-color: @base-color--30;
+    }
+  }
+}

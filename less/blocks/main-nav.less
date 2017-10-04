@@ -1,5 +1,6 @@
 .main-nav {
-  padding-top: 69px;
+  height: 255px; //Временно для построения сетки
+  padding-top: 70px;
   font-size: 18px;
   color: @white;
   position: relative;
@@ -57,5 +58,35 @@
     &::after {
       background-color: @hover-color--30;
     }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    padding-top: 110px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__wrapper {
+    width: 940px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .main-nav {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav{
+    height: 110px; //Временно для сетки
   }
 }

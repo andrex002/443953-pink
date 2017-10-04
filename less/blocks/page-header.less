@@ -1,8 +1,7 @@
 .page-header {
-  background-color: @base-color;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: bottom;
   padding-bottom: 80px;
   position: relative;
 
@@ -11,20 +10,93 @@
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 0;
-    margin-bottom: 0;
+    margin-bottom: 270px;
     background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-position: 0 top, top;
+    background-position: 0 bottom, bottom;
+    background-size: auto, auto;
     position: relative;
   }
+
+  &--form {
+    padding-bottom: 50px;
+  }
+}
+
+.page-header__main-nav {
+  background-color: @base-color;
 }
 
 .page-header__logo {
   position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+
 }
 
 .page-header__download {
-  margin-top: 339px;
+  margin-bottom: -270px;
+  margin-top: 395px;
   width: 100%;
+  height: 270px; //Временно для построения сетки
   background-color: @base-color;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    padding-bottom: 140px;
+
+    &--main {
+      padding-bottom: 0;
+      background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+      background-position: 100% bottom, bottom;
+      background-size: auto, auto;
+      margin-bottom: 0;
+    }
+
+    &--form {
+      padding-bottom: 80px;
+  }
+  }
+
+  .page-header__download {
+    background-color: transparent;
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 105px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 425px; //временно для сетки
+    margin-top: 0;
+    width: 620px;
+    margin: 0 auto;
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    padding-bottom: 100px;
+
+    &--main {
+      background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
+      background-position: 65% bottom, bottom;
+      padding-bottom: 0;
+    }
+  }
+  .page-header__download {
+    width: 940px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 110px;
+    padding-bottom: 120px;
+    height: 505px; //временно для сетки
+  }
+
+.page-header__main-nav{
+    background-color: @white--30;
+  }
 }

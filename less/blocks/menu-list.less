@@ -18,3 +18,20 @@
     color: @hover-color--30;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .menu-list {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .menu-list__item {
+    background-color: transparent;
+  }
+
+  .menu-list__link {
+    line-height: 18px;
+    text-transform: none;
+    font-weight: 400;
+  }
+}

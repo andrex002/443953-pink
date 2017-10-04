@@ -2,11 +2,44 @@
   text-align: center;
   padding-top: 28px;
   padding-bottom: 28px;
+  background-color: @base-color;
   .center-container;
+}
+
+.download__title {
+  display: none;
 }
 
 .download__annotation {
   color: @white;
   line-height: 24px;
   font-weight: 300;
+}
+
+@media (min-width: @tablet-width) {
+  .download {
+    width: 300px;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+  }
+
+  .download__title {
+    display: block;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 300;
+    color: @white;
+  }
+}
+
+.download__annotation {
+  font-size: 18px;
+}
+
+@media (min-width: @desktop-width) {
+  .download__title {
+    font-size: 50px;
+    line-height: 65px;
+  }
 }

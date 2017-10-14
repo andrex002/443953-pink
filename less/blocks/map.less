@@ -1,5 +1,21 @@
+.map {
+  line-height: 0;
+}
+
 .map__image {
   margin: 0 auto;
   width: 100%;
   height: 200px;
+}
+
+@media (min-width: @tablet-width) {
+  .map__image {
+    height: 372px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map__image {
+    height: 502px;
+  }
 }

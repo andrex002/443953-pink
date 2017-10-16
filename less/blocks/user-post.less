@@ -10,20 +10,28 @@
   width: 100%;
 }
 
+.user-post--panorama .user-post__message {
+  .center-container;
+}
+
 .user-post__message {
   background-color: @bg-grey;
-  padding-top: 20px;
-  padding-right: 18px;
-  padding-bottom: 25px;
-  padding-left: 18px;
+  padding-top: 18px;
+  padding-bottom: 20px;
   box-sizing: border-box;
-  .center-container;
+  padding-right: 17px;
+  padding-left: 17px;
 }
 
 .user-post__image-block {
   font-size: 0;
   line-height: 0;
-  .center-container;
+}
+
+.user-post__image-block--title {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .user-post__user-name {
@@ -42,12 +50,112 @@
 .user-post__text {
   line-height: 24px;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 9px;
+}
+
+.user-post__rating-block {
+  font-size: 12px;
+  line-height: 24px;
 }
 
 .user-post__rating {
-  font-size: 12px;
-  line-height: 24px;
   color: @hover-color;
   text-transform: uppercase;
+}
+
+.user-post__like {
+  margin-right: 13px;
+}
+
+@media (min-width: @tablet-width) {
+  .user-post {
+    width: 300px;
+
+    &--panorama {
+      width: 100%;
+      margin-bottom: 46px;
+    }
+  }
+
+  .user-post--panorama .user-post__image {
+    height: 509px;
+  }
+
+  .user-post--panorama .user-post__message {
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 24px;
+  }
+
+  .user-post__text {
+    order: 2;
+    min-height: 48px;
+  }
+
+  .user-post--panorama .user-post__rating-block {
+    width: 120px;
+  }
+
+  .user-post__rating-block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .user-post__like {
+    order: 2;
+    margin: 0;
+  }
+
+  .user-post__image-block {
+
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-post--panorama .user-post__message {
+    width: 940px;
+    padding-left: 26px;
+    padding-right: 32px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-post--panorama .user-post__text {
+    margin-bottom: 0;
+    min-height: 24px;
+  }
+
+  .user-post {
+    margin-bottom: 55px;
+  }
+
+  .user-post--panorama {
+    margin-bottom: 51px;
+  }
+
+  .user-galery__container {
+    width: 940px;
+  }
+
+  .user-post__image {
+    height: 400px;
+  }
+
+  .user-post__message {
+    padding-top: 24px;
+    padding-left: 28px;
+    padding-right: 30px;
+    padding-bottom: 21px;
+  }
+
+  .user-post__text {
+    margin-bottom: 12px;
+  }
+
+
 }

@@ -1,17 +1,30 @@
 .form__group {
-  &--gray-bg {
-    background-color: @bg-grey;
-  }
+  border: 0;
+  padding: 0;
+  .center-container;
+  padding-top: 40px;
 }
 
 .form__group-title {
   .title-input;
+  width: 230px;
+  text-align: center;
+  padding-top: 37px;
+  padding-bottom: 4px;
+}
+
+.form__group-title--contacts {
+  display: none;
 }
 
 .form__button {
+  width: 280px;
   line-height: 30px;
   background-color: @green-btn;
   text-transform: uppercase;
+  border-radius: 2px;
+  border: 0;
+  margin-bottom: 36px;
 
   &:hover {
     background-color: @green-btn--hover;
@@ -26,12 +39,232 @@
 .form__anotation {
   text-transform: uppercase;
   line-height: 30px;
+  margin: 0;
 
   &--span {
     color: @hover-color;
+  }
+
+  &--optional {
+    display: none;
   }
 }
 
 .form__footer {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__label {
+  padding-left: 22px;
+  padding-bottom: 11px;
+}
+
+.form__gray-bg {
+  background-color: @bg-grey;
+}
+
+.form__group--name {
+  padding-bottom: 20px;
+}
+
+.form__group--contacts {
+  margin-top: -5px;
+  padding-bottom: 20px;
+}
+
+.form__group--textarea {
+  padding-top: 10px;
+  margin-top: -3px;
+  margin-bottom: 46px;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__group {
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 0;
+    padding-left: 57px;
+    padding-top: 45px;
+    border: 2px solid @border-input;
+  }
+
+  .form__group-title--contacts {
+    display: inline;
+  }
+
+  .form__group--name {
+    order: 1;
+    border: 0;
+    padding-left: 0;
+    padding-bottom: 1px;
+  }
+
+  .form__group--radio {
+    order: 2;
+    margin-bottom: 56px;
+  }
+
+  .form__group--radio .form__group {
+    padding-bottom: 9px;
+  }
+
+  .form__group--contacts {
+    order: 3;
+    padding-right: 58px;
+    padding-top: 31px;
+    padding-bottom: 0;
+    margin-bottom: 50px;
+  }
+
+  .form__group--checkbox {
+    order: 4;
+    margin-bottom: 55px;
+  }
+
+  .form__group--textarea {
+    order: 5;
+    padding-top: 29px;
+    padding-right: 58px;
+    padding-bottom: 47px;
+    margin-bottom: 69px;
+  }
+
+  .form__footer {
+    order: 6;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form__group {
+
+  }
+
+  .form__gray-bg {
+    background-color: @white;
+  }
+
+  .form__group-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 51px;
+  }
+
+   .form__group-field--contacts {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin-bottom: 35px;
+   }
+
+  .form__label {
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-right: 19px;
+  }
+
+  .form__group-title {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: auto;
+    line-height: 30px;
+  }
+
+  .form__button {
+    width: 300px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__group--name {
+    width: 435px;
+    padding-top: 49px;
+    margin: 0;
+  }
+
+  .form__group--radio {
+    width: 435px;
+    margin-top: 30px;
+  }
+
+  .form__group--contacts {
+    width: 940px;
+    padding-top: 28px;
+  }
+
+  .form__group--checkbox {
+    width: 940px;
+  }
+
+  .form__group-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__group--textarea {
+    width: 940px;
+    padding-top: 26px;
+    padding-bottom: 40px;
+    margin-bottom: 67px;
+  }
+
+  .form__footer {
+    width: 940px;
+  }
+
+  .form__group--radio .form__group {
+    padding-bottom: 14px;
+  }
+
+  .form__group-title {
+    padding-left: 25px;
+    padding-right: 28px;
+  }
+
+  .form__group-field {
+    margin-bottom: 52px;
+  }
+
+  .form__contacts-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__group-field--contacts {
+    width: 375px;
+    margin-bottom: 20px;
+  }
+
+  .form__group--checkbox .form__group {
+    padding-left: 58px;
+    padding-right: 58px;
+    padding-bottom: 6px;
+  }
+
+  .form__anotation {
+    &--optional {
+      display: inline;
+    }
+  }
+
+  .form__button {
+    font-size: 18px;
+    font-family: "Open Sans", "Arial", sans-serif;
+  }
 }

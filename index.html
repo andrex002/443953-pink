@@ -8,12 +8,16 @@
   </head>
   <body>
     <header class="page-header page-header--main">
-      <a class="page-header__logo logo">
-        <img class="logo__image" src="http://placehold.it/75x22" width="75" height="22" alt="Логотип приложения Пинк">
-      </a>
-      <nav class="page-header__main-nav main-nav">
-        <button class="main-nav__toggle" type="button"></button>
-        <div class="main-nav__wrapper">
+      <div class="page-header__main-nav">
+        <nav class="main-nav main-nav--opened">
+          <div class="main-nav__wrapper">
+            <div class="main-nav__top">
+              <a class="main-nav__logo logo">
+                <img class="logo__image" src="http://placehold.it/75x22" width="75" height="22" alt="Логотип приложения Пинк">
+              </a>
+              <button class="main-nav__toggle" type="button"></button>
+            </div>
+          </div>
           <ul class="main-nav__list menu-list">
             <li class="menu-list__item menu-list__item--active">
               <a class="menu-list__link">Главная</a>
@@ -25,13 +29,14 @@
               <a class="menu-list__link" href="form.html">Конкурс</a>
             </li>
             <li class="menu-list__item">
-              <a class="menu-list__link" href="https://htmlacademy.ru">Html Academy</a>
+              <a class="menu-list__link" href="https://htmlacademy.ru">HTML Academy</a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
       <section class="page-header__download">
         <div class="download">
+          <h2 class="download__title">Взгляните<br>на жизнь иначе!</h2>
           <a class="download__app button" href="#">Скачать приложение</a>
           <div class="download__platform platform">
             <a class="platform__link" href="#">Скачать приложение для устройств Mac Os
@@ -52,30 +57,41 @@
       <h1 class="visually-hidden">Pink - приложение для ваших фотографий</h1>
 
       <section class="advantages">
-        <h2 class="visually-hidden">Преимущества приложения Pink</h2>
-        <p class="advantages__text">
-          <span class="advantages__action">Устали от серости мегаполиса?</span>
-          <span class="advantages__action">Нам есть, что вам предложить!</span>
-        </p>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <h3 class="advantages__title">Поднимает настроение</h3>
-            <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Меняет мир вокруг</h3>
-            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Заводит новых друзей</h3>
-            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
+
+          <h2 class="visually-hidden">Преимущества приложения Pink</h2>
+          <p class="advantages__text">
+            <span class="advantages__action">Устали от серости мегаполиса?</span>
+            <span class="advantages__action">Нам есть, что вам<br>предложить!</span>
+          </p>
+
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--img-mood">
+              <h3 class="advantages__title">Поднимает настроение</h3>
+              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item advantages__item--img-changes">
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
+              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__item advantages__item--img-friends">
+              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+          <div class="advantages__effect">
+            <div class="advantages__effect-wrapper">
+              <h3 class="advantages__title advantages__title--effect">Эффект на 24 часа!</h3>
+              <p class="advantages__description advantages__description--effect">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+              <a class="advantages__link" href="#">Узнать больше об исследовании</a>
+            </div>
+          </div>
       </section>
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы о нас</h2>
         <div class="reviews__block">
-          <p class="reviews__autor">Николай Петров</p>
+          <p class="reviews__autor">Николай Петров
+            <span class="reviews__age">25 лет, водитель трамвая</span>
+          </p>
           <blockquote class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
           </blockquote>
         </div>
@@ -90,24 +106,72 @@
           <h2 class="visually-hidden">Наши тарифы</h2>
           <table class="rates__item">
             <tr>
-              <td class="rates__name rates__name--hit" colspan="2">Стандарт <span class="rates__price">3.99 usd</span></td>
+              <td class="rates__option"></td>
+              <td class="rates__name">База<span class="rates__price">1.99 usd</span></td>
+              <td class="rates__name rates__name--hit">Стандарт<span class="rates__price">3.99 usd</span></td>
+              <td class="rates__name">Анлим<span class="rates__price">9.99 usd</span></td>
             </tr>
             <tr class="rates__string-option">
               <td class="rates__option">Розовый фильтр</td>
-              <td class="rates__available">есть
-                <img src="http://placehold.it/31x21" width="31" height="21" alt="Галочка">
+              <td class="rates__available">
+                <div class="rates__available-wrapper">
+                  <span>Розовый фильтр</span>
+                  <img src="http://placehold.it/31x21" width="31" height="21" alt="Галочка">
+                </div>
+              </td>
+              <td class="rates__available">
+                <div class="rates__available-wrapper">
+                  <span>Розовый фильтр</span>
+                  <img src="http://placehold.it/31x21" width="31" height="21" alt="Галочка">
+                </div>
+              </td>
+              <td class="rates__available">
+                <div class="rates__available-wrapper">
+                  <span>Розовый фильтр</span>
+                  <img src="http://placehold.it/31x21" width="31" height="21" alt="Галочка">
+                </div>
               </td>
             </tr>
             <tr class="rates__string-option">
               <td class="rates__option">Смайлики</td>
-              <td class="rates__available">есть
-                <img src="http://placehold.it/31x21" width="31" height="21" alt="Галочка">
+              <td class="rates__available">
+                <div class="rates__available-wrapper">
+                  <span>Смайлики</span>
+                  <img src="http://placehold.it/27x26" width="27" height="26" alt="Крестик">
+                </div>
+              </td>
+              <td class="rates__available">
+                <div class="rates__available-wrapper">
+                  <span>Смайлики</span>
+                  <img src="http://placehold.it/31x21" width="31" height="21" alt="Галочка">
+                </div>
+              </td>
+              <td class="rates__available">
+                <div class="rates__available-wrapper">
+                  <span>Смайлики</span>
+                  <img src="http://placehold.it/31x21" width="31" height="21" alt="Галочка">
+                </div>
               </td>
             </tr>
             <tr class="rates__string-option">
-              <td class="rates__option">Коментарии</td>
-              <td class="rates__available">нет
-                <img src="http://placehold.it/27x26" width="27" height="26" alt="Крестик">
+              <td class="rates__option">Комментарии</td>
+              <td class="rates__available">
+                <div class="rates__available-wrapper">
+                  <span>Комментарии</span>
+                  <img src="http://placehold.it/27x26" width="27" height="26" alt="Крестик">
+                </div>
+              </td>
+              <td class="rates__available">
+                <div class="rates__available-wrapper">
+                  <span>Комментарии</span>
+                  <img src="http://placehold.it/27x26" width="27" height="26" alt="Крестик">
+                </div>
+              </td>
+              <td class="rates__available">
+                <div class="rates__available-wrapper">
+                  <span>Комментарии</span>
+                  <img src="http://placehold.it/31x21" width="31" height="21" alt="Галочка">
+                </div>
               </td>
             </tr>
           </table>
@@ -122,17 +186,19 @@
         <div class="contacts__data">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</p>
-          <div class="contacts__item">
-            <p class="contacts__action">Звоните:</p>
-            <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
-          </div>
-          <div class="contacts__item">
-            <p class="contacts__action">Пишите:</p>
-            <a class="contacts__link contacts__email" href="e-mail:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </div>
-          <div class="contacts__item">
-            <p class="contacts__action">Приезжайте в гости:</p>
-            <a class="contacts__link">ул. Большая<br>Конюшенная, 19/8</a>
+          <div class="contacts__item-wrapper">
+            <div class="contacts__item">
+              <p class="contacts__action">Звоните:</p>
+              <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </div>
+            <div class="contacts__item">
+              <p class="contacts__action">Пишите:</p>
+              <a class="contacts__link contacts__email" href="e-mail:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </div>
+            <div class="contacts__item">
+              <p class="contacts__action">Приезжайте в гости:</p>
+              <a class="contacts__link">ул. Большая<br>Конюшенная, 19/8</a>
+            </div>
           </div>
         </div>
         <div class="map">
@@ -140,9 +206,28 @@
         </div>
       </section>
     </main>
-
-
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--main">
+      <div class="page-footer__logo logo">
+        <img class="logo__image" src="http://placehold.it/147x40" width="147" height="40" alt="Логотип Pink">
+      </div>
+      <div class="page-footer__social social">
+        <a class="social__link" href="#">twitter
+          <img class="social__image" src="http://placehold.it/51x51" width="51" height="51" alt="Логотип twitter">
+        </a>
+        <a class="social__link" href="#">facebook
+          <img class="social__image" src="http://placehold.it/51x51" width="51" height="51" alt="Логотип facebook">
+        </a>
+        <a class="social__link" href="#">youtube
+          <img class="social__image" src="http://placehold.it/51x51" width="51" height="51" alt="Логотип youtube">
+        </a>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано
+          <a class="copyright__link" href="#">
+            <img src="http://placehold.it/27x34" width="27" height="34" alt="Логотип htmlacademy">
+          </a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>

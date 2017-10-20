@@ -1,4 +1,34 @@
 .message-field {
+  font-family: inherit;
   font-size: 18px;
   line-height: 30px;
+  width: 260px;
+  height: 180px;
+  margin-top: 2px;
+  padding-top: 16px;
+  padding-left: 20px;
+  padding-right: 0;
+  border: 2px solid @border-input;
+
+  &:hover {
+    border-color: @base-color;
+  }
+
+  &:focus {
+    border-color: @hover-color;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .message-field {
+    width: 100%;
+    height: 194px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .message-field {
+    height: 128px;
+  }
 }

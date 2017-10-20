@@ -1,11 +1,54 @@
 .contest {
-  margin-bottom: 57px;
-  .center-container;
+  margin-bottom: 16px;
+
 }
 
 .contest__title {
   padding-top: 46px;
-  padding-bottom: 46px;
+  padding-bottom: 0;
+  margin: 0;
   text-align: center;
   line-height: 30px;
+  .center-container;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.contest__title--optional {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .contest {
+    width: 620px;
+    margin: 0 auto;
+    padding-top: 93px;
+    margin-bottom: 47px;
+  }
+
+  .contest__title {
+    font-size: 18px;
+    width: 500px;
+    padding-top: 0;
+    margin-bottom: 27px;
+  }
+
+  .contest__title--optional {
+    display: inline;
+  }
+
+  .contest__form {
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contest {
+    width: 940px;
+    margin-bottom: 0;
+  }
+
+  .contest__title {
+    width: 800px;
+    margin-bottom: 34px;
+  }
 }

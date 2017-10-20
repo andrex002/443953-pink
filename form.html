@@ -7,29 +7,34 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo logo" href="index.html">
-        <img class="logo__image" src="http://placehold.it/75x22" width="75" height="22" alt="Логотип приложения Пинк">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"></button>
-        <div class="main-nav__wrapper">
+    <header class="page-header page-header--form">
+      <div class="page-header__main-nav">
+        <nav class="main-nav main-nav--opened">
+          <div class="main-nav__wrapper">
+            <div class="main-nav__top">
+              <a class="main-nav__logo logo" href="index.html">
+                <img class="logo__image" src="http://placehold.it/75x22" width="75" height="22" alt="Логотип приложения Пинк">
+              </a>
+              <button class="main-nav__toggle" type="button"></button>
+            </div>
+          </div>
           <ul class="main-nav__list menu-list">
-            <li class="menu-list__item menu-list__item--active">
+            <li class="menu-list__item">
               <a class="menu-list__link" href="index.html">Главная</a>
             </li>
             <li class="menu-list__item">
               <a class="menu-list__link" href="photo.html">Фотографии</a>
             </li>
-            <li class="menu-list__item">
+            <li class="menu-list__item menu-list__item--active">
               <a class="menu-list__link">Конкурс</a>
             </li>
             <li class="menu-list__item">
-              <a class="menu-list__link" href="https://htmlacademy.ru">Html Academy</a>
+              <a class="menu-list__link" href="https://htmlacademy.ru">HTML Academy</a>
             </li>
           </ul>
-        </div>
-      </nav>
+            </div>
+        </nav>
+      </div>
       <h1 class="page-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
     <main>
@@ -39,100 +44,114 @@
           <span class="contest__title contest__title--optional">Пожалуйста, заполните форму ниже:</span>
         </p>
         <form class="contest__form form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__group">
-            <label class="form__label input">Фамилия
-              <input class="input__field" type="text" name="Фамилия" placeholder="Укажите фамилию *" required="required">
-            </label>
-            <label class="form__label input">Имя
-              <input class="input__field" type="text" name="Имя" placeholder="Укажите ваше имя *" required="required">
-            </label>
-            <label class="form__label input">Отчество
-              <input class="input__field" type="text" name="Отчество" placeholder="Ну и отчество тоже">
-            </label>
+          <fieldset class="form__group form__group--name">
+            <div class="form__group-field">
+              <label class="form__label input" for="first-name">Фамилия:</label>
+              <input class="input__field" id="first-name" type="text" name="Фамилия" placeholder="Укажите фамилию *" required="required">
+            </div>
+            <div class="form__group-field">
+              <label class="form__label input" for="name">Имя:</label>
+              <input class="input__field" id="name" type="text" name="Имя" placeholder="Введите ваше имя *" required="required">
+            </div>
+            <div class="form__group-field">
+              <label class="form__label input" for="patronymic">Отчество:</label>
+              <input class="input__field" id="patronymic" type="text" name="Отчество" placeholder="Ну и отчество тоже">
+            </div>
           </fieldset>
-          <fieldset class="form__group form__group--gray-bg">
-            <legend class="form__group-title">Ваши безбашенные достижения в путешествии</legend>
-            <label class="form__indicator checkbox">
-              <input class="checkbox__field" type="checkbox" name="achievements" value="selfie-shark" checked="checked">
-              <span class="checkbox__icon"></span>
-              Сделал селфи с акулой
-            </label>
-            <label class="form__indicator checkbox">
-              <input class="checkbox__field" type="checkbox" name="achievements" value="beach" checked="checked">
-              <span class="checkbox__icon"></span>
-              Обгорел на пляже
-            </label>
-            <label class="form__indicator checkbox">
-              <input class="checkbox__field" type="checkbox" name="achievements" value="Chuck-Norris">
-              <span class="checkbox__icon"></span>
-              Видел Чака Норриса
-            </label>
-            <label class="form__indicator checkbox">
-              <input class="checkbox__field" type="checkbox" name="achievements" value="souvenirs">
-              <span class="checkbox__icon"></span>
-              Накупил сувениров
-            </label>
-            <label class="form__indicator checkbox">
-              <input class="checkbox__field" type="checkbox" name="achievements" value="tower" checked="checked">
-              <span class="checkbox__icon"></span>
-              Удержал башню
-            </label>
-            <label class="form__indicator checkbox">
-              <input class="checkbox__field" type="checkbox" name="achievements" value="hotel">
-              <span class="checkbox__icon"></span>
-              Разгромил отель
-            </label>
+          <div class="form__gray-bg form__group--checkbox">
+            <fieldset class="form__group">
+              <legend class="form__group-title">Ваши безбашенные достижения в путешествии</legend>
+              <div class="form__group-list">
+                <label class="form__indicator checkbox">
+                  <input class="checkbox__field" type="checkbox" name="achievements" value="selfie-shark" checked="checked">
+                  <span class="checkbox__icon"></span>
+                  Сделал селфи с акулой
+                </label>
+                <label class="form__indicator checkbox">
+                  <input class="checkbox__field" type="checkbox" name="achievements" value="beach" checked="checked">
+                  <span class="checkbox__icon"></span>
+                  Обгорел на пляже
+                </label>
+                <label class="form__indicator checkbox">
+                  <input class="checkbox__field" type="checkbox" name="achievements" value="Chuck-Norris">
+                  <span class="checkbox__icon"></span>
+                  Видел Чака Норриса
+                </label>
+                <label class="form__indicator checkbox">
+                  <input class="checkbox__field" type="checkbox" name="achievements" value="souvenirs">
+                  <span class="checkbox__icon"></span>
+                  Накупил сувениров
+                </label>
+                <label class="form__indicator checkbox">
+                  <input class="checkbox__field" type="checkbox" name="achievements" value="tower" checked="checked">
+                  <span class="checkbox__icon"></span>
+                  Удержал башню
+                </label>
+                <label class="form__indicator checkbox">
+                  <input class="checkbox__field" type="checkbox" name="achievements" value="hotel">
+                  <span class="checkbox__icon"></span>
+                  Разгромил отель
+                </label>
+              </div>
+            </fieldset>
+          </div>
+          <fieldset class="form__group form__group--contacts">
+            <legend class="form__group-title form__group-title--contacts">Контактная информация</legend>
+            <div class="form__contacts-wrapper">
+              <div class="form__group-field form__group-field--contacts">
+                <label class="form__label input" for="phone">Номер телефона</label>
+                <input class="input__field" id="phone" type="tel" name="Телефон" placeholder="Номер, пожалуйста">
+              </div>
+              <div class="form__group-field form__group-field--contacts">
+                <label class="form__label input" for="email">Адрес почты</label>
+                <input class="input__field" id="email" type="email" name="Почта" placeholder="Введите почту *">
+              </div>
+            </div>
           </fieldset>
-          <fieldset class="form__group">
-            <label class="form__label input">Номер телефона
-              <input class="input__field" type="tel" name="Телефон" placeholder="Номер, пожалуйста">
-            </label>
-            <label class="form__label input">Адрес почты
-              <input class="input__field" type="email" name="Почта" placeholder="Введите почту *">
-            </label>
-          </fieldset>
-          <fieldset class="form__group form__group--gray-bg">
-            <legend class="form__group-title">С каким приложением путешествовали?</legend>
-            <label class="form__indicator radio">
-              <input class="radio__field" type="radio" name="pink-platform" value="iOS" checked="checked">
-              <span class="radio__icon"></span>
-              Pink для iOS
-            </label>
-            <label class="form__indicator radio">
-              <input class="radio__field" type="radio" name="pink-platform" value="Android">
-              <span class="radio__icon"></span>
-              Pink на Android
-            </label>
-            <label class="form__indicator radio">
-              <input class="radio__field" type="radio" name="pink-platform" value="Windows-Phone">
-              <span class="radio__icon"></span>
-              Windows Phone
-            </label>
-          </fieldset>
-          <fieldset class="form__group">
+          <div class="form__gray-bg form__group--radio">
+            <fieldset class="form__group">
+              <legend class="form__group-title">С каким приложением путешествовали?</legend>
+              <label class="form__indicator radio">
+                <input class="radio__field" type="radio" name="pink-platform" value="iOS" checked="checked">
+                <span class="radio__icon"></span>
+                Pink для iOS
+              </label>
+              <label class="form__indicator radio">
+                <input class="radio__field" type="radio" name="pink-platform" value="Android">
+                <span class="radio__icon"></span>
+                Pink на Android
+              </label>
+              <label class="form__indicator radio">
+                <input class="radio__field" type="radio" name="pink-platform" value="Windows-Phone">
+                <span class="radio__icon"></span>
+                Windows Phone
+              </label>
+            </fieldset>
+          </div>
+          <fieldset class="form__group form__group--textarea">
             <legend class="form__group-title">Опишите свои эмоции</legend>
             <textarea class="form__message message-field" name="user-message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
           <div class="form__footer">
             <button class="button form__button" type="submit">Отправить форму</button>
-            <p class="form__anotation"><span class="form__anotation form__anotation--span">*</span> - обязательные поля</p>
+            <p class="form__anotation"><span class="form__anotation form__anotation--span">*</span> &mdash; обязательные <span class="form__anotation--optional">для заполнения </span>поля</p>
           </div>
         </form>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__logo logo--full">
-        <img class="logo-full__image" src="http://placehold.it/147x40" width="147" height="40" alt="Логотип Pink">
+      <div class="page-footer__logo logo">
+        <img class="logo__image" src="http://placehold.it/147x40" width="147" height="40" alt="Логотип Pink">
       </div>
       <div class="page-footer__social social">
         <a class="social__link" href="#">twitter
-          <svg></svg>
+          <img class="social__image" src="http://placehold.it/51x51" width="51" height="51" alt="Логотип twitter">
         </a>
         <a class="social__link" href="#">facebook
-          <svg></svg>
+          <img class="social__image" src="http://placehold.it/51x51" width="51" height="51" alt="Логотип facebook">
         </a>
         <a class="social__link" href="#">youtube
-          <svg></svg>
+          <img class="social__image" src="http://placehold.it/51x51" width="51" height="51" alt="Логотип youtube">
         </a>
       </div>
       <div class="page-footer__copyright copyright">

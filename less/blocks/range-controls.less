@@ -1,0 +1,62 @@
+.range-controls {
+  position: relative;
+  height: 8px;
+  padding-top: 6px;
+}
+
+.range-controls__scale {
+  width: 240px;
+  height: 2px;
+  background-color: @base-color;
+}
+
+.range-controls__switcher {
+  position: absolute;
+  top: 0;
+  left: 195px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid @hover-color;
+  border-radius: 50%;
+  background-color: @bg-grey;
+
+  &:active {
+    background-color: @hover-color;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .range-controls__scale {
+    width: 202px;
+  }
+
+  .range-controls__switcher--crop {
+    left: 146px;
+  }
+
+  .range-controls__switcher--fill {
+    left: 25px;
+  }
+
+  .range-controls__switcher--contrast {
+    left: 96px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .range-controls__scale {
+    width: 288px;
+  }
+
+.range-controls__switcher--crop {
+    left: 72px;
+  }
+
+  .range-controls__switcher--fill {
+    left: 248px;
+  }
+
+  .range-controls__switcher--contrast {
+    left: 160px;
+  }
+}

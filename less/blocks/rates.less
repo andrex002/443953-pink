@@ -1,10 +1,13 @@
 .rates {
   background-color: @bg-grey;
-  padding-bottom: 46px;
+  padding-top: 91px;
+  padding-bottom: 32px;
+  overflow: hidden;
 }
 
 .rates__item {
   width: 100%;
+  table-layout: fixed;
 }
 
 .rates__string-option {
@@ -12,6 +15,11 @@
 }
 
 .rates__name {
+  width: 278px;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 22px;
+  box-sizing: border-box;
   background-color: @base-color;
   font-size: 18px;
   line-height: 30px;
@@ -20,7 +28,24 @@
   text-transform: uppercase;
 }
 
+.rates__available {
+  padding: 19px 17px 16px 22px;
+  text-transform: uppercase;
+}
+
+.rates__available-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rates__list {
+  position: relative;
+  left: -268px;
+  margin: 0 auto;
+}
+
 .rates__price {
+  display: block;
   font-size: 24px;
   font-weight: 300;
 }
@@ -28,8 +53,91 @@
 .rates__option {
   line-height: 30px;
   text-transform: uppercase;
+  display: none;
 }
 
 .rates__toggles {
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .rates {
+    padding-top: 85px;
+    padding-bottom: 70px;
+  }
+
+  .rates__list {
+    position: static;
+    width: 620px;
+    overflow: visible;
+  }
+
+  .rates__option {
+    display: table-cell;
+    width: 25%;
+    height: 80px;
+    text-transform: capitalize;
+    padding-left: 15px;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    height: auto;
+  }
+
+  .rates__name {
+    width: 25%;
+    font-size: 16px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+  }
+
+  .rates__price {
+    font-size: 18px;
+  }
+
+  .rates__available {
+    font-size: 0;
+    padding-top: 8px;
+    padding-bottom: 7px;
+  }
+
+  .rates__available-wrapper {
+    justify-content: center;
+  }
+
+  .rates__toggles {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+    .rates {
+      padding-top: 150px;
+      padding-bottom: 95px;
+    }
+
+  .rates__list {
+    width: 940px;
+  }
+
+  .rates__name {
+    font-size: 18px;
+    padding-top: 16px;
+    padding-bottom: 22px;
+  }
+
+  .rates__price {
+    font-size: 24px;
+  }
+
+  .rates__option {
+    font-size: 18px;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .rates__vailable {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }

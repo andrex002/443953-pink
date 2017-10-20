@@ -1,8 +1,47 @@
 .input {
+  display: block;
   .title-input;
 }
 
 .input__field {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 23px;
+  border: 2px solid @border-input;
+
+  &:hover {
+    border-color: @base-color;
+  }
+
+  &:focus {
+    border-color: @hover-color;
+  }
 }
+
+@media (min-width: @tablet-width) {
+  .input__field {
+    margin-bottom: 0;
+  }
+
+  .form__group-field--contacts .input__field {
+    margin-bottom: 15px;
+  }
+
+  .form__group-field--contacts .input {
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .input__field {
+    padding-left: 18px;
+  }
+}
+

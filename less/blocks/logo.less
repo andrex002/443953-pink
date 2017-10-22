@@ -3,3 +3,28 @@
   font-size: 0;
   line-height: 0;
 }
+
+.logo__glass {
+  fill: @hover-color;
+}
+
+.logo__text {
+  fill: @base-color;
+}
+
+.logo__image {
+  &:hover {
+    & .logo__text {
+    fill: @hover-color;
+    }
+  }
+}
+
+.logo__image {
+  &:active {
+    & .logo__text {
+          fill: @base-color;
+        }
+    opacity: 0.3;
+  }
+}

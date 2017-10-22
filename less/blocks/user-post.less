@@ -6,12 +6,32 @@
   }
 }
 
+.user-post__name-wrapper {
+  .center-container;
+  padding: 0;
+  position: relative;
+}
+
+.user-post__name {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: @white;
+  padding: 5px 20px;
+  background-color: @hover-color;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 .user-post__image {
   width: 100%;
 }
 
 .user-post--panorama .user-post__message {
   .center-container;
+  padding-left: 17px;
 }
 
 .user-post__message {
@@ -64,7 +84,16 @@
 }
 
 .user-post__like {
-  margin-right: 13px;
+  margin-right: 16px;
+  border: none;
+  background: none;
+  padding: 0;
+  vertical-align: middle;
+
+}
+
+.user-post__like-img {
+  fill: @hover-color;
 }
 
 @media (min-width: @tablet-width) {
@@ -75,6 +104,14 @@
       width: 100%;
       margin-bottom: 46px;
     }
+  }
+
+  .user-post__name-wrapper {
+    width: 620px;
+  }
+
+  .user-post__name {
+    top: 58px;
   }
 
   .user-post--panorama .user-post__image {
@@ -157,5 +194,11 @@
     margin-bottom: 12px;
   }
 
+  .user-post__name-wrapper {
+    width: 940px;
+  }
 
+  .user-post__name {
+    top: 55px;
+  }
 }

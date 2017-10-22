@@ -1,8 +1,11 @@
 .rates {
   background-color: @bg-grey;
-  padding-top: 91px;
+  padding-top: 120px;
   padding-bottom: 32px;
   overflow: hidden;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
 }
 
 .rates__item {
@@ -26,11 +29,37 @@
   color: @white;
   font-weight: bold;
   text-transform: uppercase;
+
+  &--hit {
+    position: relative;
+    background-image: url(../img/bg-hit.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+
+    &::before {
+      content: "Хит";
+      position: absolute;
+      left: 8px;
+      top: 12px;
+      font-size: 14px;
+      line-height: 30px;
+      color: @white;
+      transform: rotate(-45deg);
+    }
+  }
 }
 
 .rates__available {
   padding: 19px 17px 16px 22px;
   text-transform: uppercase;
+
+  &--yes {
+    fill: @successfully;
+  }
+
+  &--no {
+    fill: @error;
+  }
 }
 
 .rates__available-wrapper {
@@ -40,7 +69,7 @@
 
 .rates__list {
   position: relative;
-  left: -268px;
+  left: -260px;
   margin: 0 auto;
 }
 
@@ -58,11 +87,12 @@
 
 .rates__toggles {
   text-align: center;
+  margin-top: 32px;
 }
 
 @media (min-width: @tablet-width) {
   .rates {
-    padding-top: 85px;
+    padding-top: 108px;
     padding-bottom: 70px;
   }
 
@@ -88,8 +118,16 @@
     font-size: 16px;
     padding-top: 12px;
     padding-bottom: 10px;
-  }
 
+    &--hit {
+    background-image: url(../img/bg-hit-tablet.svg);
+
+      &::before {
+        left: 3px;
+        top: 6px;
+      }
+    }
+  }
   .rates__price {
     font-size: 18px;
   }
@@ -123,6 +161,15 @@
     font-size: 18px;
     padding-top: 16px;
     padding-bottom: 22px;
+
+    &--hit {
+      background-image: url(../img/bg-hit.svg);
+
+      &::before {
+        left: 7px;
+        top: 12px;
+      }
+    }
   }
 
   .rates__price {

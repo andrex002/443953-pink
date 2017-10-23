@@ -3,6 +3,28 @@
   line-height: 0;
 }
 
+.social__link {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border: 3px solid @base-color--10;
+  border-radius: 50%;
+  line-height: 45px;
+
+  &:hover {
+    border-color: @base-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__image {
+  vertical-align: middle;
+  fill: @hover-color;
+}
+
 .social__link:not(:last-child) {
     margin-right: 12px;
   }

@@ -6,16 +6,20 @@
   justify-content: space-between;
   padding-left: 36px;
   padding-right: 46px;
-  padding-bottom: 75px;
+  padding-bottom: 71px;
   border-bottom: 1px solid @black--10;
 }
 
 .filters__icon {
   width: 44px;
   height: 44px;
-  background-color: @base-color;
+  background: none;
   border: none;
   padding: 0;
+}
+
+.filters__icon-img {
+  fill: @base-color--30;
 }
 
 .filters__item .filters__range-controls {
@@ -24,6 +28,10 @@
 
 .filters__item--active .filters__range-controls {
   display: block;
+}
+
+.filters__item--active .filters__icon-img {
+  fill: @hover-color;
 }
 
 .filters__range-controls {
@@ -67,6 +75,12 @@
     width: 22px;
     height: 22px;
   }
+
+  .filters__icon-img {
+    width: 22px;
+    height: 22px;
+    fill: @hover-color;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -85,5 +99,11 @@
     width: 44px;
     height: 44px;
     margin-right: 47px;
+  }
+
+  .filters__icon-img {
+    width: 48px;
+    height: 48px;
+    fill: @hover-color;
   }
 }

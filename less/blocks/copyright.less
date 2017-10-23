@@ -9,6 +9,18 @@
   margin-left: 12px;
 }
 
+.copyright__image {
+  fill: @hover-color;
+
+  &:hover {
+    fill: @base-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .copyright__link {
     position: relative;
